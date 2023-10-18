@@ -1,0 +1,282 @@
+body{
+
+    background-image:url('covoiturage.jpg') ;
+    opacity: 0.5;
+}
+
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: whitesmoke;
+    margin-left: 550px;
+    margin-right: 550px;
+    margin-top: 150px;
+    margin-bottom: 0px;
+    padding-bottom: 50px;
+    /* padding-right: 15%; */
+
+}
+.formulaire h1 {
+    margin-right: 200px;
+    
+}
+.formulaire p{
+    margin-right: 180px;
+    margin-top: 0px;
+    color: #7d787886;
+    font-size: 18px;
+    
+
+}
+.facebook2{
+    background-color: rgba(64, 64, 245, 0.89);
+    width: 90%;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom:50px;
+    height: 40px;
+    padding-top: 11px;
+    border-radius:5px ;
+
+}
+
+.facebook 
+{
+    
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 17px;
+    
+}
+.formulaire .email{
+    margin-right: 200px;
+    
+    
+}
+.email input{
+    width: 220%;
+    height: 40px;
+    border-radius:5px ;
+    border: 1px solid #7d787886;
+    
+}
+.email input:hover{
+    border: 1px solid  rgba(64, 64, 245, 0.89);
+}
+.formulaire .passe{
+    
+    margin-right: 200px;
+    margin-top:15px ;
+    
+}
+.passe input{
+    
+    width: 220%;
+    height: 40px;
+    border-radius:5px ;
+    border: 1px solid #7d787886;
+    
+}
+.formulaire .bouton{
+
+    margin-top: 60px;
+    
+    
+}
+.bouton input{
+
+    border: none;
+    color: aliceblue;
+    font-size: 16px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right:20px;
+    padding-top: 15px;
+    background-color:  rgba(64, 64, 245, 0.89);
+    border-radius: 5px;
+    
+} 
+.bouton a{
+
+    text-decoration: none;
+    color:black;
+    font-size: 17px;
+    margin-right: 190px;
+    
+
+}
+
+
+.container_line {
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+   
+}
+
+ .div1,.div2{
+
+    background-color:#7d787886;
+    height: 1px;
+    width: 200px;
+     
+}
+
+
+.ou{
+    margin-top:-11px ;
+}
+
+/* .email input[type="email"]:focus,
+.passe input[type="password"]:focus{
+    outline: 1px solid #1877f2;
+} */
+/* ------------page inscription------------ */
+.page_inscription{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: whitesmoke;
+    margin-left: 500px;
+    margin-right: 550px;
+    margin-top: 90px;
+    margin-bottom: 0px;
+    padding-bottom: 50px;
+
+}
+
+.page_inscription h1 {
+    margin-right: 280px;
+    
+}
+.page_inscription p{
+    /* margin-right: 10px; */
+    margin-top: 0px;
+    color: #7d787886;
+    font-size: 18px;
+    padding-left:0px;
+}
+.infos{
+    display: flex;
+    flex-direction: row;
+    margin-right: 70px;
+}
+
+.prenom label{
+    margin-left: 10px;
+
+}
+
+.prenom input{
+
+    width: 110%;
+    height: 40px;
+    border-radius:5px ;
+    border: 1px solid #7d787886;
+    margin-left: 10px;
+
+}
+.nom label{
+
+    margin-left: 40px;
+
+}
+.nom input{
+
+    width: 110%;
+    height: 40px;
+    border-radius:5px ;
+    border: 1px solid #7d787886;
+    margin-left: 40px;
+
+}
+.telephone{
+    margin-top: 50px;
+    margin-right:270px ;
+
+    /* width: 110%;
+    height: 40px;
+    margin-top: 30px; */
+
+}
+
+
+.telephone input{
+    width: 340px;
+    height: 40px;
+    border-radius:5px ;
+    border: 1px solid #7d787886;
+   
+}
+
+.boutton{
+    border: none;
+    color: aliceblue;
+    font-size: 16px; 
+    text-align: center;
+    background-color:  rgba(64, 64, 245, 0.89);
+    margin-top:40px;
+    margin-bottom: -16px;
+    margin-left: 340px;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right:20px;
+    padding-top: 10px;
+    
+}
+.drapeau{
+    display: flex;
+    flex-direction: row;
+    /* margin-top: 20px; */
+    margin-left: 280px;
+    border: 1px solid #7d787886;
+    align-items: center;
+    padding-left: 10px;
+    height: 40px;
+}
+.mobile{
+    display: flex;
+    flex-direction: row;
+    
+}
+.drapeau img{
+
+    height:20px;width:40px;
+}
+
+
+
+
+
+
+.email2,.passe2{
+
+    margin-right: 250px;
+    margin-top: 30px;
+
+
+}
+ .email2 input{
+    width: 252%;
+    height: 40px;
+    border-radius:5px ;
+    border: 1px solid #7d787886;
+    
+}
+ .email2 input:hover{
+    border: 1px solid  rgba(64, 64, 245, 0.89);
+}
+
+.passe2 input{
+    
+    width: 252%;
+    height: 40px;
+    border-radius:5px ;
+    border: 1px solid #7d787886;
+    
+} 
+
+
+
