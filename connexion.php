@@ -9,6 +9,14 @@ if(isset($_POST["email"]) && isset($_POST["passe"])){
 
         echo 'veillez renseigner les champs';//quant les variables sont vides
 
+    }elseif (!preg_match("/^[a-zA-Z]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$/", $email)){
+
+        echo "L'adresse e-mail n'est valide.";
+
+    }elseif(!preg_match("/^[A-Za-z0-9.-]+$/",$passe ) &&  strlen($passe)<8){
+
+        echo "inserer un mot de passe valide";
+
     }else{
             //Connection a la base de donnee et table
             try{
@@ -26,15 +34,20 @@ if(isset($_POST["email"]) && isset($_POST["passe"])){
 
             // On sélectionne les champs email et mot de passe de la table inscription
             $sql = 'SELECT prenom,nom,telephone,email2, passe2 FROM inscription';
+            // $sql = 'SELECT prenom,nom,telephone,email2, passe2 FROM inscription where email2=email, passe2=  passe ';
             // On exécute la requête
+
             $inscription =  $db->query($sql);
 
+                // if(!empty($db->query($sql))){
+        
             foreach ($inscription  as  $inscipt):  // début de la boucle
 
                 if(($inscipt['email2'] == $email) && ($inscipt['passe2'] == $passe )){
 
                     echo"Bienvenue sur votre page E-Taxibokko ";
-                        break;
+
+                    break;
                      
 
                 } else{
@@ -42,10 +55,8 @@ if(isset($_POST["email"]) && isset($_POST["passe"])){
 
                     echo "veillez vous inscrire";
                     break;
-                    
 
-               }
-            endforeach; // fin de la boucle 
+                } endforeach ;  // fin de la boucle 
             
     }
     

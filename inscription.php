@@ -13,7 +13,24 @@
 
             echo 'veillez renseigner les champs';//quant les variables sont vides
 
-        }else{
+        }elseif (!preg_match("/^[A-Za-zÀ-ÖØ-öø-ÿ-]+$/", $nom) || !preg_match("/^[A-Za-zÀ-ÖØ-öø-ÿ-]+$/", $prenom)) {
+
+            echo "Le nom et le prénom doivent contenir uniquement des lettres alphabétiques.";
+        
+        }elseif (!preg_match("/^[a-zA-Z]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$/", $email2)){
+
+            echo "L'adresse e-mail n'est valide.";
+
+        } elseif(!preg_match("/^7[0-9]{8}$/", $telephone)){
+
+            echo "le numero de telephone n'est pas valide.";
+
+        }elseif(!preg_match("/^[A-Za-z0-9.-]+$/",$passe2 ) &&  strlen($passe2)<8){
+
+            echo "inserer un mot de passe valide";
+
+        }
+        else{
                 //Connection a la base de donnee et table
                 try{
                     //on se connecte a mysql
